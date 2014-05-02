@@ -57,7 +57,9 @@ def update_canvas():
                     canvas[x][y] = 1
                 
 
-# The clever part
+# The (somewhat) tricky part
+# This function figures out how many neighbors
+# a cell at (x, y) has
 def count_neighbors(x, y):
     return count_left(x, y) + count_right(x, y) + count_up(x, y) + count_down(x, y) + count_diagonals(x, y)
 
