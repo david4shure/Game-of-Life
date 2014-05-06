@@ -131,7 +131,7 @@ def main()
   
   current_gen = 0
 
-  while current_gen < 1000 do
+  while current_gen < max_generations do
     IO.popen("clear")
     print_canvas()
     update_canvas()
